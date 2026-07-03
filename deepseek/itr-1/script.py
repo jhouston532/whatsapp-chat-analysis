@@ -1,0 +1,306 @@
+#!/usr/bin/env python3
+"""
+Analyze a WhatsApp group chat export.
+Usage:
+    python analyze_chat.py path/to/chat.txt
+Outputs are saved in a new directory next to the script.
+"""
+
+import sys
+import os
+import csv
+import re
+from datetime import datetime, timedelta
+from collections import defaultdict, Counter
+from pathlib import Path
+
+
+# ----------------------------------------------------------------------
+# 1. PARSING FUNCTIONS
+# ----------------------------------------------------------------------
+def parse_datetime(date_str):
+    """
+    Convert a WhatsApp timestamp string into a datetime object.
+    Expected format: "M/D/YY, h:mm:ss AM/PM"  (e.g., "5/5/26, 10:34:46 AM")
+    All times are assumed to be Mountain Daylight Time (UTC-6).
+    Returns a naive datetime (no timezone conversion).
+    """
+    return datetime.strptime(date_str, "%m/%d/%y, %I:%M:%S %p")
+
+
+def parse_line(line):
+    """
+    Parse a single line of the WhatsApp export.
+    Format: "[timestamp] sender: message"
+    Returns a tuple (datetime, sender, message) or None if the line is empty.
+    """
+    line = line.strip()
+    if not line:
+        return None
+
+    # Split into "[timestamp]" and the rest
+    if not line.startswith('['):
+        return None
+    try:
+        close_bracket = line.index('] ')
+        date_part = line[1:close_bracket]          # everything inside brackets
+        rest = line[close_bracket + 2:]            # after "] "
+    except ValueError:
+        return None
+
+    # Split sender and message at the first ": "
+    if ': ' not in rest:
+        return None
+    sender, message = rest.split(': ', 1)
+    sender = sender.strip()
+    message = message.strip()
+
+    # Parse the date
+    try:
+        dt = parse_datetime(date_part)
+    except ValueError:
+        return None
+
+    return dt, sender, message
+
+
+def read_chat(filepath):
+    """
+    Generator that yields (datetime, sender, message) for every valid line.
+    """
+    with open(filepath, 'r', encoding='utf-8') as f:
+        for line in f:
+            parsed = parse_line(line)
+            if parsed:
+                yield parsed
+
+
+# ----------------------------------------------------------------------
+# 2. ANALYSIS: TIME OF DAY PER USER
+# ----------------------------------------------------------------------
+def save_user_times(entries, output_dir):
+    """
+    Create a CSV file with the time-of-day information for every message.
+    Columns: user, datetime_MDT, hour, minute, weekday, date
+    This allows easy charting of when each user is active.
+    """
+    filepath = output_dir / 'user_message_times.csv'
+    with open(filepath, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['user', 'datetime_MDT', 'hour', 'minute', 'weekday', 'date'])
+        for dt, sender, _ in entries:
+            writer.writerow([
+                sender,
+                dt.strftime('%Y-%m-%d %H:%M:%S'),
+                dt.hour,
+                dt.minute,
+                dt.strftime('%A'),
+                dt.strftime('%Y-%m-%d')
+            ])
+    print(f"User times saved to {filepath}")
+
+
+# ----------------------------------------------------------------------
+# 3. ANALYSIS: MESSAGE CHAINS & INTERVALS
+# ----------------------------------------------------------------------
+def compute_chains(entries, gap_minutes=5):
+    """
+    Split the message stream into 'chains' where consecutive messages
+    are separated by less than `gap_minutes`. Returns a list of chains,
+    each chain being a list of (datetime, sender, message).
+    """
+    if not entries:
+        return []
+
+    sorted_entries = sorted(entries, key=lambda x: x[0])
+    chains = []
+    current_chain = [sorted_entries[0]]
+
+    for prev, curr in zip(sorted_entries, sorted_entries[1:]):
+        delta = (curr[0] - prev[0]).total_seconds()
+        if delta <= gap_minutes * 60:
+            current_chain.append(curr)
+        else:
+            chains.append(current_chain)
+            current_chain = [curr]
+    chains.append(current_chain)
+    return chains
+
+
+def save_chain_summary(chains, output_dir):
+    """
+    Write a CSV describing each message chain.
+    Columns: chain_id, start_time, end_time, message_count,
+             unique_users, user_list, avg_gap_seconds
+    """
+    filepath = output_dir / 'message_chains.csv'
+    with open(filepath, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['chain_id', 'start_time', 'end_time', 'message_count',
+                         'unique_users', 'user_list', 'avg_gap_seconds'])
+        for i, chain in enumerate(chains, 1):
+            start = chain[0][0]
+            end = chain[-1][0]
+            count = len(chain)
+            users = set(sender for _, sender, _ in chain)
+            # Compute average gap between consecutive messages in the chain
+            gaps = []
+            for a, b in zip(chain, chain[1:]):
+                gaps.append((b[0] - a[0]).total_seconds())
+            avg_gap = sum(gaps) / len(gaps) if gaps else 0
+            writer.writerow([
+                i,
+                start.strftime('%Y-%m-%d %H:%M:%S'),
+                end.strftime('%Y-%m-%d %H:%M:%S'),
+                count,
+                len(users),
+                ', '.join(sorted(users)),
+                round(avg_gap, 1)
+            ])
+    print(f"Chain summary saved to {filepath}")
+
+
+def save_intervals_global(entries, output_dir):
+    """
+    Write a CSV of ALL inter‑message gaps (time difference between
+    consecutive messages in the whole chat).
+    Columns: index, timestamp1, timestamp2, delta_seconds, user1, user2
+    """
+    sorted_entries = sorted(entries, key=lambda x: x[0])
+    filepath = output_dir / 'all_message_intervals.csv'
+    with open(filepath, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow(['index', 'timestamp1', 'timestamp2', 'delta_seconds',
+                         'user1', 'user2'])
+        for i, (e1, e2) in enumerate(zip(sorted_entries, sorted_entries[1:]), 1):
+            dt1, usr1, _ = e1
+            dt2, usr2, _ = e2
+            delta = (dt2 - dt1).total_seconds()
+            writer.writerow([
+                i,
+                dt1.strftime('%Y-%m-%d %H:%M:%S'),
+                dt2.strftime('%Y-%m-%d %H:%M:%S'),
+                delta,
+                usr1,
+                usr2
+            ])
+    print(f"Global intervals saved to {filepath}")
+
+
+def save_intervals_per_user(entries, output_dir):
+    """
+    For each user, write a CSV with time gaps between their own successive
+    messages. This directly helps detect semi‑regular posting patterns.
+    Columns: message_index, timestamp1, timestamp2, delta_seconds
+    """
+    user_dir = output_dir / 'user_intervals'
+    user_dir.mkdir(exist_ok=True)
+
+    # Group messages by user
+    user_messages = defaultdict(list)
+    for dt, sender, msg in entries:
+        user_messages[sender].append((dt, msg))
+
+    for user, msgs in user_messages.items():
+        # Sort by time (already sorted, but be safe)
+        msgs.sort(key=lambda x: x[0])
+        # Sanitize filename
+        safe_name = re.sub(r'[^a-zA-Z0-9_\- ]', '_', user).replace(' ', '_')
+        filepath = user_dir / f'{safe_name}_intervals.csv'
+        with open(filepath, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow(['message_index', 'timestamp1', 'timestamp2',
+                             'delta_seconds'])
+            for i in range(len(msgs) - 1):
+                t1, _ = msgs[i]
+                t2, _ = msgs[i+1]
+                delta = (t2 - t1).total_seconds()
+                writer.writerow([
+                    i + 1,
+                    t1.strftime('%Y-%m-%d %H:%M:%S'),
+                    t2.strftime('%Y-%m-%d %H:%M:%S'),
+                    delta
+                ])
+    print(f"Per‑user intervals saved in {user_dir}")
+
+
+# ----------------------------------------------------------------------
+# 4. ANALYSIS: KEYWORD POPULARITY PER USER
+# ----------------------------------------------------------------------
+def tokenize(text):
+    """Split text into lowercase words, ignoring punctuation and numbers."""
+    # Keep only letters and spaces, then split
+    clean = re.sub(r'[^a-z\s]', '', text.lower())
+    return clean.split()
+
+
+def save_keywords_per_user(entries, output_dir):
+    """
+    For each user, count the frequency of every word they used and
+    write a CSV file with columns: keyword, count (sorted descending).
+    """
+    user_words = defaultdict(list)
+    for _, sender, message in entries:
+        user_words[sender].extend(tokenize(message))
+
+    user_kw_dir = output_dir / 'user_keywords'
+    user_kw_dir.mkdir(exist_ok=True)
+
+    for user, words in user_words.items():
+        safe_name = re.sub(r'[^a-zA-Z0-9_\- ]', '_', user).replace(' ', '_')
+        filepath = user_kw_dir / f'{safe_name}_keywords.csv'
+        counter = Counter(words)
+        with open(filepath, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow(['keyword', 'count'])
+            for word, cnt in counter.most_common():
+                writer.writerow([word, cnt])
+    print(f"User keyword files saved in {user_kw_dir}")
+
+
+# ----------------------------------------------------------------------
+# 5. MAIN
+# ----------------------------------------------------------------------
+def main():
+    if len(sys.argv) != 2:
+        print(f"Usage: python {sys.argv[0]} <path_to_chat_export.txt>")
+        sys.exit(1)
+
+    input_path = Path(sys.argv[1])
+    if not input_path.exists():
+        print(f"File not found: {input_path}")
+        sys.exit(1)
+
+    # Prepare output directory
+    base_name = input_path.stem                 # filename without extension
+    output_dir = Path(f"analysis_{base_name}")
+    output_dir.mkdir(exist_ok=True)
+
+    # Read all messages into a list (needed for multiple analyses)
+    entries = list(read_chat(input_path))
+    if not entries:
+        print("No valid messages found. Check the file format.")
+        sys.exit(1)
+
+    # 1. Time of day per user
+    save_user_times(entries, output_dir)
+
+    # 2a. Message chains (bursts of messages)
+    chains = compute_chains(entries, gap_minutes=5)
+    save_chain_summary(chains, output_dir)
+
+    # 2b. Global inter‑message gaps
+    save_intervals_global(entries, output_dir)
+
+    # 2c. Per‑user intervals (to spot regular posting patterns)
+    save_intervals_per_user(entries, output_dir)
+
+    # 3. Keyword frequency per user
+    save_keywords_per_user(entries, output_dir)
+
+    print(f"\nAll results saved in: {output_dir.resolve()}")
+
+
+if __name__ == '__main__':
+    main()
+    

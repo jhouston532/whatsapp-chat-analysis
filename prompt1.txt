@@ -1,0 +1,27 @@
+I have an exported Whatsapp group chat. 
+
+I want a python script that will analyze it. 
+
+It is stored in a .txt file and follows this format. 
+[5/5/26, 10:34:46 AM] +1 (334) 578‐7077: +1 (334) 578‐7077 changed this group's settings to allow all members to send messages to this group
+[5/5/26, 10:41:34 AM] +1 (334) 578‐7077: +1 (334) 578‐7077 changed the group description
+[5/5/26, 11:00:38 AM] ~ GateMix: Hello everyone, and welcome to the Coin Mixing Study Group. My name is Carl, and I have five years of professional experience in coin mixing. Here, I’ll share how to earn commissions by accepting orders for cryptocurrency mixing services. If you’re interested, feel free to stay and join the discussion with everyone
+[5/5/26, 11:03:37 AM] ~ Olivia: Who gave you permission to add me to this group?
+[5/5/26, 11:07:35 AM] +1 (548) 313‐0587: Who knows! I get invitations like this every month
+[5/5/26, 11:10:13 AM] ~ Ricardo J Rivas: I want to learn how to make money, but how can I trust you?
+[5/5/26, 11:15:10 AM] ~ GateMix: You can research crypto mixing investments; time will tell
+[5/5/26, 11:19:16 AM] ~ GateMix: Whether you're a working professional or a retiree, you can earn money through 
+
+I want the following from this script:
+
+1. The time of day that each individual user sent a message, in a spreadsheet file format that could be used to compare when people posted. Note that the times attached in the file are all in Mountain Daylight Time. 
+2. When large chains of messages were sent; this is because my suspicion that many of them are bots, and are programmed to wait a semi-regular amount of time in-between sending messages or sets of messages. I don't know what would be the best file format for this. 
+3. Keywords popularity for each user, each in a seperate file 
+
+The script should be: 
+
+1. split into small functions that each do a specific thing, as much as possible, with clear comments that indicate how it works. 
+2. run with something to the effect of "python script.py filepath/text.
+3. saving the results to separate files 
+
+The results that I want to produce from this script should be files that can be easily converted into charts that can visually represent the analysis.
