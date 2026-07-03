@@ -1,0 +1,25 @@
+Good, both are available. Let me build the script.Now let me test it with a sample chat file that includes edge cases (multi-line messages, system messages, unicode phone numbers, bursts):Runs cleanly and correctly identified 5 distinct authors (including cleaning the invisible unicode chars in the two phone numbers) and 2 system messages. Let me verify the outputs look right.Multi-line message merging worked correctly (the "earn money through / this program" split got joined into one message). Now let's verify the Excel outputs render properly.Everything works correctly — the chain detection caught GateMix's 4-message burst (89-second span with 29–872 second gaps), and the hourly pivot table is ready to chart. Now let me copy the deliverable to outputs and hand it off.I tested it end-to-end on a sample file matching your format (including the multi-line message, invisible unicode characters around phone numbers, and system notifications), so I'm confident it handles the real export cleanly. Requires `pandas` and `openpyxl` (`pip install pandas openpyxl`).
+
+**Usage:**
+```
+python whatsapp_chat_analyzer.py path/to/chat.txt
+```
+Optional flags: `--outdir` (default `chat_analysis_output`), `--chain-gap-seconds` (default 90 — how big a gap breaks a "burst" into a new chain), `--include-system-messages`.
+
+**What it produces:**
+
+1. **`message_times.xlsx`** — `MessageTimes` sheet has every message with date/time/hour/hour-decimal/weekday columns; `HourlyCountsByAuthor` is a ready-made pivot table (hour 0–23 × author) you can turn straight into a line or heatmap chart comparing posting patterns.
+
+2. **`message_chains.xlsx`** — three sheets:
+   - `MessageIntervals`: every message with seconds-since-previous (overall and per-author)
+   - `ChainSummary`: detected bursts — start/end time, message count, which authors participated, duration
+   - `AuthorRegularity`: per-author mean/median/std gap and **coefficient of variation** (std÷mean), sorted so the most mechanically-regular posters — your bot suspects — float to the top
+
+3. **`keywords/<author>.csv`** — one file per author, `keyword,count`, sorted by frequency. Strips URLs, punctuation, and common stopwords first.
+
+4. **`parsed_messages.csv`** — the full cleaned dataset for reference or anything else you want to do with it.
+
+A few notes on design choices:
+- System messages (group setting changes, adds/removes, etc.) are auto-detected and excluded from the time/chain/keyword analysis by default, but kept in the raw dataset with an `is_system` flag — use `--include-system-messages` if you want them folded in.
+- Timestamps are kept as-is from the export (you noted they're already MDT), so no timezone conversion is applied.
+- The coefficient-of-variation metric in `AuthorRegularity` is probably your most useful bot-detection signal — a human texting has noisy, unpredictable gaps; a scripted bot often has a tight, low-CV distribution around its wait time.
