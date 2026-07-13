@@ -1,0 +1,177 @@
+message_id,datetime_mdt,date,time,hour_24,minute,hour_decimal,day_of_week,sender,is_system,message_length,message
+0,2026-05-19 22:59:26,2026-05-19,22:59:26,22,59,22.991,Tuesday,Gatemix Group 8808,True,105,"Messages and calls are end-to-end encrypted. Only people in this chat can read, listen to, or share them."
+1,2026-05-19 22:59:26,2026-05-19,22:59:26,22,59,22.991,Tuesday,Unknown user,False,31,Unknown user created this group
+2,2026-05-20 06:30:30,2026-05-20,06:30:30,6,30,6.508,Wednesday,Gatemix Group 8808,True,27,~ ~KaranChauhan🥰😎 added you
+3,2026-05-20 06:30:30,2026-05-20,06:30:30,6,30,6.508,Wednesday,Gatemix Group 8808,False,126,"Disappearing messages were turned on. New messages will disappear from this chat 90 days after they're sent, except when kept."
+4,2026-05-20 06:30:41,2026-05-20,06:30:41,6,30,6.511,Wednesday,Gatemix Group 8808,True,69,"~ ~KaranChauhan🥰😎 added ~ BB, ~ Betty, and 23 others. Tap to see all."
+5,2026-05-20 06:31:35,2026-05-20,06:31:35,6,31,6.526,Wednesday,‪+92 322 4001825‬,False,44,‪+92 322 4001825‬ joined using a group link.
+6,2026-05-20 06:31:37,2026-05-20,06:31:37,6,31,6.527,Wednesday,‪+92 323 6046213‬,False,44,‪+92 323 6046213‬ joined using a group link.
+7,2026-05-20 06:35:45,2026-05-20,06:35:45,6,35,6.596,Wednesday,Gatemix Group 8808,True,83,"‪+92 323 6046213‬ added ~ Alex, ‪+1 (408) 401‑2447‬, and 23 others. Tap to see all."
+8,2026-05-20 06:36:26,2026-05-20,06:36:26,6,36,6.607,Wednesday,‪+967 717 310 341‬,True,44,~ MatthewPeterson removed ‪+967 717 310 341‬
+9,2026-05-20 06:36:34,2026-05-20,06:36:34,6,36,6.609,Wednesday,‪+91 90763 76049‬,True,43,~ MatthewPeterson removed ‪+91 90763 76049‬
+10,2026-05-20 06:36:38,2026-05-20,06:36:38,6,36,6.611,Wednesday,‪+91 84360 46855‬,True,43,~ MatthewPeterson removed ‪+91 84360 46855‬
+11,2026-05-20 06:36:42,2026-05-20,06:36:42,6,36,6.612,Wednesday,‪+91 74778 98395‬,True,43,~ MatthewPeterson removed ‪+91 74778 98395‬
+12,2026-05-20 06:36:46,2026-05-20,06:36:46,6,36,6.613,Wednesday,‪+91 70487 93335‬,True,43,~ MatthewPeterson removed ‪+91 70487 93335‬
+13,2026-05-20 06:36:50,2026-05-20,06:36:50,6,36,6.614,Wednesday,‪+91 93658 17269‬,True,43,~ MatthewPeterson removed ‪+91 93658 17269‬
+14,2026-05-20 06:36:54,2026-05-20,06:36:54,6,36,6.615,Wednesday,‪+91 72196 06603‬,True,43,~ MatthewPeterson removed ‪+91 72196 06603‬
+15,2026-05-20 06:36:58,2026-05-20,06:36:58,6,36,6.616,Wednesday,‪+91 6262 579 780‬,True,44,~ MatthewPeterson removed ‪+91 6262 579 780‬
+16,2026-05-20 06:37:03,2026-05-20,06:37:03,6,37,6.618,Wednesday,~ ~KaranChauhan🥰😎,True,43,~ MatthewPeterson removed ~ ~KaranChauhan🥰😎
+17,2026-05-20 06:37:07,2026-05-20,06:37:07,6,37,6.619,Wednesday,‪+92 322 4001825‬,True,43,~ MatthewPeterson removed ‪+92 322 4001825‬
+18,2026-05-20 06:37:11,2026-05-20,06:37:11,6,37,6.62,Wednesday,‪+92 323 6046213‬,True,43,~ MatthewPeterson removed ‪+92 323 6046213‬
+19,2026-05-20 06:37:18,2026-05-20,06:37:18,6,37,6.622,Wednesday,~ MatthewPeterson,True,99,~ MatthewPeterson changed this group's settings to allow all members to send messages to this group
+20,2026-05-20 06:37:19,2026-05-20,06:37:19,6,37,6.622,Wednesday,~ MatthewPeterson,False,64,~ MatthewPeterson changed the group name to “Gatemix Group 8808”
+21,2026-05-20 06:37:21,2026-05-20,06:37:21,6,37,6.623,Wednesday,~ MatthewPeterson,True,99,~ MatthewPeterson changed this group's settings to allow all members to send messages to this group
+22,2026-05-20 08:53:38,2026-05-20,08:53:38,8,53,8.894,Wednesday,~ BB,False,4,Scam
+23,2026-05-20 08:53:41,2026-05-20,08:53:41,8,53,8.895,Wednesday,~ BB,False,4,Scam
+24,2026-05-20 08:53:42,2026-05-20,08:53:42,8,53,8.895,Wednesday,~ BB,False,4,Scam
+25,2026-05-20 08:53:43,2026-05-20,08:53:43,8,53,8.895,Wednesday,~ BB,False,4,Scam
+26,2026-05-20 08:53:44,2026-05-20,08:53:44,8,53,8.896,Wednesday,~ BB,False,4,Scam
+27,2026-05-20 08:53:45,2026-05-20,08:53:45,8,53,8.896,Wednesday,~ BB,False,4,Scam
+28,2026-05-20 08:53:47,2026-05-20,08:53:47,8,53,8.896,Wednesday,~ BB,False,4,Scam
+29,2026-05-20 08:53:48,2026-05-20,08:53:48,8,53,8.897,Wednesday,~ BB,False,4,Acam
+30,2026-05-20 08:53:49,2026-05-20,08:53:49,8,53,8.897,Wednesday,~ BB,False,4,Acam
+31,2026-05-20 08:53:51,2026-05-20,08:53:51,8,53,8.897,Wednesday,~ BB,False,4,Scam
+32,2026-05-20 08:53:53,2026-05-20,08:53:53,8,53,8.898,Wednesday,~ BB,False,4,Scam
+33,2026-05-20 08:54:01,2026-05-20,08:54:01,8,54,8.9,Wednesday,~ BB,False,4,Scam
+34,2026-05-20 08:54:02,2026-05-20,08:54:02,8,54,8.901,Wednesday,~ BB,False,4,Scam
+35,2026-05-20 08:54:04,2026-05-20,08:54:04,8,54,8.901,Wednesday,~ BB,False,4,Scam
+36,2026-05-20 08:54:06,2026-05-20,08:54:06,8,54,8.902,Wednesday,~ BB,False,4,Scam
+37,2026-05-20 08:54:07,2026-05-20,08:54:07,8,54,8.902,Wednesday,~ BB,False,4,Scam
+38,2026-05-20 08:54:09,2026-05-20,08:54:09,8,54,8.902,Wednesday,~ BB,False,4,Scam
+39,2026-05-20 08:54:12,2026-05-20,08:54:12,8,54,8.903,Wednesday,~ BB,False,4,Scam
+40,2026-05-20 10:28:58,2026-05-20,10:28:58,10,28,10.483,Wednesday,~ BB,True,22,~ Gatemix removed ~ BB
+41,2026-05-20 10:31:37,2026-05-20,10:31:37,10,31,10.527,Wednesday,~ MatthewPeterson,True,35,~ Gatemix removed ~ MatthewPeterson
+42,2026-05-20 10:38:58,2026-05-20,10:38:58,10,38,10.649,Wednesday,~ Gatemix,False,387,"Hello everyone, welcome to this new cryptocurrency mixing and trading group. This group includes both new and experienced members, where you can learn from each other and share investment experiences. We wish you all the best in your future investment journeys. If any members in the group have questions about Gatemix and cryptocurrency mixing, please feel free to ask them in the group"
+43,2026-05-20 10:43:34,2026-05-20,10:43:34,10,43,10.726,Wednesday,~ Nestor Rui,False,159,"Thank you for inviting me to join the new trading group. I already learned about coin mixing trading in the previous group, and I'd like to try this investment"
+44,2026-05-20 10:51:01,2026-05-20,10:51:01,10,51,10.85,Wednesday,~ Gatemix,False,545,"GateMix is a stable platform that has been in operation for 8 years. Sign up to receive a 30 USDT bonus. You only need to deposit 270 USDT to start trading. Each trade takes just 5 hours to complete, and you can complete 4 orders per day. The profits from each order can be reinvested into the next order to grow your income. If you’d like to join, please contact my assistant Tyler, who will guide you through the entire process. GateMix Link: gatemix.com Invitation Code: x73d GateMix App: app.gatemix.com Assistant Tyler: t.me/AssistantTyler1"
+45,2026-05-20 11:02:32,2026-05-20,11:02:32,11,2,11.042,Wednesday,~ Ron Perry,False,50,<attached: -0000030-PHOTO-2026-05-20-11-02-32.jpg>
+46,2026-05-20 11:03:24,2026-05-20,11:03:24,11,3,11.057,Wednesday,~ Ron Perry,False,125,"After my funds reached 30,000 USDT, my returns increased by nearly 80 USDT. The commission rate of this channel is fantastic!"
+47,2026-05-20 11:11:06,2026-05-20,11:11:06,11,11,11.185,Wednesday,~ F m,False,162,"Hello manager, thank you for inviting me to join the new group. I still have a lot to learn and discuss, and this group will allow me to learn more trading skills"
+48,2026-05-20 11:20:40,2026-05-20,11:20:40,11,20,11.344,Wednesday,~ Luke James,True,44,How did I get added to this new group again?
+49,2026-05-20 11:36:57,2026-05-20,11:36:57,11,36,11.616,Wednesday,~ Gatemix,False,324,"This is a reorganized cryptocurrency mixing trading group. I’m sure you’ve all witnessed the stability of cryptocurrency mixing trading. If you’d like to join Gatemix to participate in cryptocurrency mixing trading and earn a steady commission, please contact my assistant via Telegram. Assistant Tyler: t.me/AssistantTyler1"
+50,2026-05-20 11:42:38,2026-05-20,11:42:38,11,42,11.711,Wednesday,~ Luke James,False,38,"Okay, I’ll get in touch when I need to"
+51,2026-05-20 11:47:11,2026-05-20,11:47:11,11,47,11.786,Wednesday,~ Ron Perry,False,175,"Cryptocurrency mixing is very simple. You can earn a stable income by spending just a few minutes each day. If you have time, you can learn how to do it. I highly recommend it"
+52,2026-05-20 11:49:04,2026-05-20,11:49:04,11,49,11.818,Wednesday,~ Ron Perry,False,183,"I easily earned 238 USDT. Most people couldn't earn that much in a day's work, but I could earn several 238 USDT in a day without any effort, and it didn't affect my other work at all"
+53,2026-05-20 11:55:30,2026-05-20,11:55:30,11,55,11.925,Wednesday,~ Jose,False,50,<attached: -0000022-PHOTO-2026-05-20-11-55-30.jpg>
+54,2026-05-20 11:55:46,2026-05-20,11:55:46,11,55,11.929,Wednesday,~ Jose,False,88,I earned another 369 USDT from this mixing order. I plan to withdraw some of the profits
+55,2026-05-20 12:10:49,2026-05-20,12:10:49,12,10,12.18,Wednesday,~ Tom Hess,False,25,This message was deleted.
+56,2026-05-20 12:10:51,2026-05-20,12:10:51,12,10,12.181,Wednesday,~ Tom Hess,False,50,<attached: -0000019-PHOTO-2026-05-20-12-10-51.jpg>
+57,2026-05-20 12:12:32,2026-05-20,12:12:32,12,12,12.209,Wednesday,~ Tom Hess,False,108,"Manager, I’ve already completed an order today and earned $1,100. I’ve also started working on the 2nd order"
+58,2026-05-20 12:13:30,2026-05-20,12:13:30,12,13,12.225,Wednesday,~ Tom Hess,False,60,My friend also completed an order today and earned over $500
+59,2026-05-20 12:21:04,2026-05-20,12:21:04,12,21,12.351,Wednesday,~ F m,False,95,"My goodness, your returns are so high! How long have you been investing in Gatemix coin mixing?"
+60,2026-05-20 12:27:55,2026-05-20,12:27:55,12,27,12.465,Wednesday,~ Tom Hess,False,51,I've been investing in Gatemix for over 2 years now
+61,2026-05-20 12:37:51,2026-05-20,12:37:51,12,37,12.631,Wednesday,‪+1 (661) 418‑9948‬,False,50,<attached: -0000014-PHOTO-2026-05-20-12-37-51.jpg>
+62,2026-05-20 12:40:48,2026-05-20,12:40:48,12,40,12.68,Wednesday,‪+1 (661) 418‑9948‬,False,140,My new order has started. The profits from my coin mixing orders have been consistently stable. This new order will earn me another  49 USDT
+63,2026-05-20 12:59:35,2026-05-20,12:59:35,12,59,12.993,Wednesday,~ Jose,False,50,<attached: -0000012-PHOTO-2026-05-20-12-59-35.jpg>
+64,2026-05-20 13:00:59,2026-05-20,13:00:59,13,0,13.016,Wednesday,~ Jose,False,103,My withdrawal has already been credited to my account. Gatemix processed it much faster than I expected
+65,2026-05-20 13:04:14,2026-05-20,13:04:14,13,4,13.071,Wednesday,~ Gatemix,False,113,Congratulations on achieving your desired returns on Gatemix. Keep accepting orders to earn even more commissions
+66,2026-05-20 13:08:33,2026-05-20,13:08:33,13,8,13.143,Wednesday,~ Katia,False,59,"Holy cow, you actually withdrew that much profit in one go!"
+67,2026-05-20 13:10:12,2026-05-20,13:10:12,13,10,13.17,Wednesday,~ Katia,False,127,"Gatemix did an amazing job! They processed the payment so quickly. I need to start saving up right away to reach my $5,000 goal"
+68,2026-05-20 13:15:03,2026-05-20,13:15:03,13,15,13.251,Wednesday,~ Gatemix,False,263,"Hard work pays off. We encourage everyone to actively take on orders, build wealth, and share your success with family and friends once you’ve earned money through Gatemix. We wish you all happiness and joy; after all, financial prosperity can transform our lives"
+69,2026-05-20 13:18:17,2026-05-20,13:18:17,13,18,13.305,Wednesday,~ Gatemix,False,418,"If you're interested in joining GateMix, you can start by registering for a GateMix account. New users will receive a 30 USDT bonus. Simply deposit 270 USDT to start trading and earning returns. If you have any questions, please contact my assistant, Tyler, who will guide you through the entire process. GateMix link: gatemix.com Invitation Code: x73d GateMix App: app.gatemix.com Assistant Tyler:t.me/AssistantTyler1"
+70,2026-05-20 13:27:53,2026-05-20,13:27:53,13,27,13.465,Wednesday,‪+1 (626) 512‑8920‬,False,91,I've never tried cryptocurrency investing before. Are there any tips for investing in this?
+71,2026-05-20 13:35:18,2026-05-20,13:35:18,13,35,13.588,Wednesday,~ Tom Hess,False,151,"Cryptocurrency mixing requires no special skills; simply actively accepting orders is sufficient. Furthermore, capital is the key to generating returns"
+72,2026-05-20 13:43:01,2026-05-20,13:43:01,13,43,13.717,Wednesday,~ Dinara,False,91,"Manager, I am honored to continue learning about coin mixing with everyone on this new team"
+73,2026-05-20 13:50:07,2026-05-20,13:50:07,13,50,13.835,Wednesday,~ Dinara,False,50,<attached: -0000002-PHOTO-2026-05-20-13-50-07.jpg>
+74,2026-05-20 13:52:25,2026-05-20,13:52:25,13,52,13.874,Wednesday,~ Dinara,False,44,I'll earn $58 once my new order is completed
+75,2026-05-20 14:21:04,2026-05-20,14:21:04,14,21,14.351,Wednesday,~ Nestor Rui,False,50,<attached: 00000001-PHOTO-2026-05-20-14-21-04.jpg>
+76,2026-05-20 14:24:42,2026-05-20,14:24:42,14,24,14.412,Wednesday,~ Nestor Rui,False,59,"I deposited $4,675 worth of Bitcoin into my Gatemix account"
+77,2026-05-20 14:25:52,2026-05-20,14:25:52,14,25,14.431,Wednesday,~ Nestor Rui,False,106,"I see that a lot of people are investing through the 5K USDT channel, so I’m planning to give it a try too"
+78,2026-05-20 14:33:03,2026-05-20,14:33:03,14,33,14.551,Wednesday,‪+1 (626) 512‑8920‬,False,84,"With such a large investment, how much commission can be earned from a single order?"
+79,2026-05-20 14:41:52,2026-05-20,14:41:52,14,41,14.698,Wednesday,‪+1 (661) 418‑9948‬,False,125,The return is approximately 40-50 USDT. The specific return depends on the capital utilization rate after the order is placed
+80,2026-05-20 14:44:55,2026-05-20,14:44:55,14,44,14.749,Wednesday,‪+1 (626) 512‑8920‬,False,42,Isn't the utilization rate of funds fixed?
+81,2026-05-20 14:47:18,2026-05-20,14:47:18,14,47,14.788,Wednesday,‪+1 (661) 418‑9948‬,False,255,It's obvious you haven't studied carefully. Capital utilization is variable; each channel has different capital utilization rates and commission rates. Channels that require more capital generally have higher capital utilization rates and commission rates
+82,2026-05-20 14:54:14,2026-05-20,14:54:14,14,54,14.904,Wednesday,~ Gatemix,False,50,<attached: 00000008-PHOTO-2026-05-20-14-54-14.jpg>
+83,2026-05-20 14:55:15,2026-05-20,14:55:15,14,55,14.921,Wednesday,~ Gatemix,False,120,"This shows the capital utilization rate, commission revenue ratio, and eligibility requirements for each Gatemix channel"
+84,2026-05-20 14:56:09,2026-05-20,14:56:09,14,56,14.936,Wednesday,~ Gatemix,False,101,"As the amount of capital invested increases, the return on investment for that channel will also rise"
+85,2026-05-20 14:56:40,2026-05-20,14:56:40,14,56,14.944,Wednesday,~ Gatemix,False,34,Fund utilization will also improve
+86,2026-05-20 15:21:12,2026-05-20,15:21:12,15,21,15.353,Wednesday,~ Ricky,False,50,<attached: 00000012-PHOTO-2026-05-20-15-21-12.jpg>
+87,2026-05-20 15:24:54,2026-05-20,15:24:54,15,24,15.415,Wednesday,~ Ricky,False,44,I've already started processing my 3rd order
+88,2026-05-20 15:53:06,2026-05-20,15:53:06,15,53,15.885,Wednesday,~ Katia,False,50,<attached: 00000014-PHOTO-2026-05-20-15-53-06.jpg>
+89,2026-05-20 15:53:58,2026-05-20,15:53:58,15,53,15.899,Wednesday,~ Katia,False,51,"I've started a new order. In 5 hours, I'll earn $16"
+90,2026-05-20 16:08:55,2026-05-20,16:08:55,16,8,16.149,Wednesday,~ Gatemix,False,418,"If you're interested in joining GateMix, you can start by registering for a GateMix account. New users will receive a 30 USDT bonus. Simply deposit 270 USDT to start trading and earning returns. If you have any questions, please contact my assistant, Tyler, who will guide you through the entire process. GateMix link: gatemix.com Invitation Code: x73d GateMix App: app.gatemix.com Assistant Tyler:t.me/AssistantTyler1"
+91,2026-05-20 16:36:23,2026-05-20,16:36:23,16,36,16.606,Wednesday,~ Ron Perry,False,88,"My new order is also being processed, and once it's complete, I'll earn another 248 USDT"
+92,2026-05-20 16:40:41,2026-05-20,16:40:41,16,40,16.678,Wednesday,~ Jose,False,168,"My new order earnings dropped by nearly 80 USDT, but that's okay. I believe that after a week, my earnings will return to their previous level through compound interest"
+93,2026-05-20 18:09:49,2026-05-20,18:09:49,18,9,18.164,Wednesday,‪+1 (810) 964‑0497‬,False,62,How much profit can a manager generate per channel each month?
+94,2026-05-20 18:14:44,2026-05-20,18:14:44,18,14,18.246,Wednesday,~ Gatemix,False,50,<attached: 00000020-PHOTO-2026-05-20-18-14-44.jpg>
+95,2026-05-20 18:16:28,2026-05-20,18:16:28,18,16,18.274,Wednesday,~ Gatemix,False,160,"This is a monthly earnings report for various channels of Gatemix's cryptocurrency investment, where you can view the basic earnings performance of each channel"
+96,2026-05-20 18:18:26,2026-05-20,18:18:26,18,18,18.307,Wednesday,~ Gatemix,False,281,Gatemix trading orders settle profits every 5 hours with real-time settlement. Users can reinvest the profits from the previous trade along with their initial investment into the next trade to increase the profits of that next order; this is known as the Gatemix compounding effect
+97,2026-05-20 18:19:58,2026-05-20,18:19:58,18,19,18.333,Wednesday,~ Jose,False,25,This message was deleted.
+98,2026-05-20 18:25:36,2026-05-20,18:25:36,18,25,18.427,Wednesday,~ Jose,False,50,<attached: 00000024-PHOTO-2026-05-20-18-25-36.jpg>
+99,2026-05-20 18:26:35,2026-05-20,18:26:35,18,26,18.443,Wednesday,~ Jose,False,97,Gatemix's coin mixing investments are not only stable but also offer quite good long-term returns
+100,2026-05-20 18:32:38,2026-05-20,18:32:38,18,32,18.544,Wednesday,‪+1 (661) 418‑9948‬,False,119,I like this investment. Its stability made me firmly choose Gatemix coin mixing investment among many other investments
+101,2026-05-20 18:38:52,2026-05-20,18:38:52,18,38,18.648,Wednesday,‪+1 (810) 964‑0497‬,False,97,"Invest $5,000 and you can make over $10,000 in profit in just one month. That’s an amazing return"
+102,2026-05-20 19:05:41,2026-05-20,19:05:41,19,5,19.095,Wednesday,~ Dinara,False,50,<attached: 00000028-PHOTO-2026-05-20-19-05-41.jpg>
+103,2026-05-20 19:07:04,2026-05-20,19:07:04,19,7,19.118,Wednesday,~ Dinara,False,37,My new order will earn me another $58
+104,2026-05-20 19:25:57,2026-05-20,19:25:57,19,25,19.433,Wednesday,‪+1 (661) 418‑9948‬,False,50,<attached: 00000030-PHOTO-2026-05-20-19-25-57.jpg>
+105,2026-05-20 19:26:27,2026-05-20,19:26:27,19,26,19.441,Wednesday,‪+1 (661) 418‑9948‬,False,45,I should be able to fill one more order today
+106,2026-05-20 19:43:34,2026-05-20,19:43:34,19,43,19.726,Wednesday,~ Gatemix,False,430,"Hello everyone! If you're interested in cryptocurrency mixing or want to earn some extra income in your spare time, please sign up for a Gatemix account first. You'll receive a 30 USDT bonus upon registration. Simply purchase 270 USDT to start earning. Gatemix registration link: gatemix.com/mobile/pages/register/register?page=register&invite_code=x73d If you have any questions, please contact my assistant: t.me/AssistantTyler1"
+107,2026-05-20 19:57:23,2026-05-20,19:57:23,19,57,19.956,Wednesday,~ Ron Perry,False,50,<attached: 00000033-PHOTO-2026-05-20-19-57-23.jpg>
+108,2026-05-20 19:58:13,2026-05-20,19:58:13,19,58,19.97,Wednesday,~ Ron Perry,False,41,This coin mixing order earned me 105 USDT
+109,2026-05-20 20:01:43,2026-05-20,20:01:43,20,1,20.029,Wednesday,~ Ron Perry,False,56,My other account can help me earn an additional 248 USDT
+110,2026-05-20 20:06:46,2026-05-20,20:06:46,20,6,20.113,Wednesday,~ Nestor Rui,False,55,Can one person open multiple accounts at the same time?
+111,2026-05-20 20:07:05,2026-05-20,20:07:05,20,7,20.118,Wednesday,~ Ron Perry,False,99,"Yes, all you need to do is register another Gatemix account using your family member's phone number"
+112,2026-05-20 20:08:53,2026-05-20,20:08:53,20,8,20.148,Wednesday,~ Ron Perry,False,134,"After I register an account using my referral code and complete an order, the other account will also receive an additional commission"
+113,2026-05-20 20:10:38,2026-05-20,20:10:38,20,10,20.177,Wednesday,~ Ron Perry,False,47,This is a little tip to help boost our revenue🤫
+114,2026-05-20 20:22:15,2026-05-20,20:22:15,20,22,20.371,Wednesday,~ F m,False,50,<attached: 00000040-PHOTO-2026-05-20-20-22-15.jpg>
+115,2026-05-20 20:23:22,2026-05-20,20:23:22,20,23,20.389,Wednesday,~ F m,False,47,I just deposited some more USDT into my account
+116,2026-05-21 11:20:25,2026-05-21,11:20:25,11,20,11.34,Thursday,~ Gatemix,False,430,"Hello everyone! If you're interested in cryptocurrency mixing or want to earn some extra income in your spare time, please sign up for a Gatemix account first. You'll receive a 30 USDT bonus upon registration. Simply purchase 270 USDT to start earning. Gatemix registration link: gatemix.com/mobile/pages/register/register?page=register&invite_code=x73d If you have any questions, please contact my assistant: t.me/AssistantTyler1"
+117,2026-05-21 11:47:12,2026-05-21,11:47:12,11,47,11.787,Thursday,‪+1 (661) 418‑9948‬,False,50,<attached: 00000043-PHOTO-2026-05-21-11-47-12.jpg>
+118,2026-05-21 11:49:21,2026-05-21,11:49:21,11,49,11.822,Thursday,‪+1 (661) 418‑9948‬,False,104,Good morning. I’ve just closed my first order of the day. I’m on track to earn a nice profit again today
+119,2026-05-21 12:22:15,2026-05-21,12:22:15,12,22,12.371,Thursday,~ Lindsay,False,50,<attached: 00000045-PHOTO-2026-05-21-12-22-15.jpg>
+120,2026-05-21 12:24:20,2026-05-21,12:24:20,12,24,12.406,Thursday,~ Lindsay,False,32,My new order has started again 😁
+121,2026-05-21 12:36:44,2026-05-21,12:36:44,12,36,12.612,Thursday,~ Gatemix,False,171,"The Gatemix platform allows for coin mixing transactions around the clock, even on holidays. Please remember to accept orders. We wish everyone on Gatemix generous returns"
+122,2026-05-21 12:37:08,2026-05-21,12:37:08,12,37,12.619,Thursday,~ Gatemix,False,221,"Group members: If you’d like to join Gatemix, please sign up for a Gatemix account first. Once you’ve completed registration, you’ll receive a 30 USDT sign-up bonus. Simply send 270 USDT from any wallet to start investing"
+123,2026-05-21 12:39:12,2026-05-21,12:39:12,12,39,12.653,Thursday,~ Gatemix,False,379,"Coin mixing orders take just 5 hours to complete and earn you a commission. You can complete 4–5 orders per day. If you have any questions after registering, please feel free to contact my assistant. GateMix looks forward to welcoming you! GateMix Official Website: gatemix.com Registration Invitation Code: x73d GateMix App: app.gatemix.com Assistant Tyler: t.me/AssistantTyler1"
+124,2026-05-21 12:47:12,2026-05-21,12:47:12,12,47,12.787,Thursday,~ Ron Perry,False,50,<attached: 00000050-PHOTO-2026-05-21-12-47-12.jpg>
+125,2026-05-21 12:50:16,2026-05-21,12:50:16,12,50,12.838,Thursday,~ Ron Perry,False,21,Made another 104 USDT
+126,2026-05-21 12:51:46,2026-05-21,12:51:46,12,51,12.863,Thursday,~ Ron Perry,False,96,The commission on new orders has also increased by 0.8 USDT. Investing in Gatemix is so awesome!
+127,2026-05-21 12:54:38,2026-05-21,12:54:38,12,54,12.911,Thursday,‪+1 (626) 512‑8920‬,False,66,Is there really no risk at all in investing in this crypto mixing?
+128,2026-05-21 13:01:29,2026-05-21,13:01:29,13,1,13.025,Thursday,~ Lindsay,False,112,This is a very stable investment with absolutely no risk—it’s just as reliable as putting your money in the bank
+129,2026-05-21 13:17:09,2026-05-21,13:17:09,13,17,13.286,Thursday,~ Gatemix,False,348,"Crypto mixing isn’t just an investment; it’s more like a part-time job, except you need to invest your own funds to get started. You’ll earn a commission from the platform for every transaction you process. Since this is a mutually beneficial partnership, there’s absolutely no need to worry—there’s no financial risk involved in mixing investments"
+130,2026-05-21 13:19:32,2026-05-21,13:19:32,13,19,13.326,Thursday,~ Gatemix,False,306,"All participants in GateMix's crypto mixing investment  earn ongoing commissions. The more funds you have in your mixing account, the higher your commissions will be. Even with limited funds, you can still earn steady order commissions. No matter how much you invest, you'll see a return on your investment"
+131,2026-05-21 13:20:25,2026-05-21,13:20:25,13,20,13.34,Thursday,~ Gatemix,False,152,"If you’d like to join GateMix, please contact my assistant to sign up for a free GateMix account. He’ll guide you on how to become a successful investor"
+132,2026-05-21 14:02:13,2026-05-21,14:02:13,14,2,14.037,Thursday,~ Tom Hess,False,50,<attached: 00000058-PHOTO-2026-05-21-14-02-13.jpg>
+133,2026-05-21 14:04:09,2026-05-21,14:04:09,14,4,14.069,Thursday,~ Tom Hess,False,133,"My new order has started. I plan to withdraw 50,000 USDT tonight. Our old pickup truck is too worn out, so I’m planning to replace it"
+134,2026-05-21 14:24:43,2026-05-21,14:24:43,14,24,14.412,Thursday,~ Lindsay,False,202,"Yesterday after get off work, I shared my investment with some of my girlfriends, and they were very interested. I want to invite them to join Gatemix. How can I create a team and earn team commissions?"
+135,2026-05-21 14:31:05,2026-05-21,14:31:05,14,31,14.518,Thursday,~ Gatemix,False,267,"In the Gatemix User Center, click on Referral Rewards. After clicking, you'll be generated with a registration QR code and an invitation link. Invite friends to register through your link, and you'll receive corresponding team rewards after they complete their orders"
+136,2026-05-21 14:41:49,2026-05-21,14:41:49,14,41,14.697,Thursday,~ Jose,False,130,My team generates around 100 USDT in revenue for me each week. I receive a small amount of money every time they complete an order
+137,2026-05-21 14:52:05,2026-05-21,14:52:05,14,52,14.868,Thursday,~ F m,False,50,<attached: 00000063-PHOTO-2026-05-21-14-52-05.jpg>
+138,2026-05-21 14:52:47,2026-05-21,14:52:47,14,52,14.88,Thursday,~ F m,False,80,They actually invited that many people and earned that much in team commissions!
+139,2026-05-21 15:24:11,2026-05-21,15:24:11,15,24,15.403,Thursday,~ Jose,False,50,<attached: 00000065-PHOTO-2026-05-21-15-24-11.jpg>
+140,2026-05-21 15:25:08,2026-05-21,15:25:08,15,25,15.419,Thursday,~ Jose,False,43,I can start trading my 3rd order of the day
+141,2026-05-21 15:26:38,2026-05-21,15:26:38,15,26,15.444,Thursday,~ Jose,False,108,"My earnings weren't affected at all after I withdrew funds yesterday, and I earned over 700 USDT again today"
+142,2026-05-21 16:06:42,2026-05-21,16:06:42,16,6,16.112,Thursday,~ Gatemix,False,491,"GateMix is a reliable platform that has been in operation for 8 years. If you are interested in joining GateMix, you can start by registering for a GateMix account. New users will receive a 30 USDT bonus. Simply deposit 270 USDT to start trading and earning returns. If you have any questions, please contact my assistant, Tyler, who will guide you through the entire process. GateMix Link: gatemix.com Invitation Code: x73d GateMix App: app.gatemix.com Assistant Tyler: t.me/AssistantTyler1"
+143,2026-05-21 16:47:44,2026-05-21,16:47:44,16,47,16.796,Thursday,‪+1 (661) 418‑9948‬,False,50,<attached: 00000069-PHOTO-2026-05-21-16-47-44.jpg>
+144,2026-05-21 16:48:57,2026-05-21,16:48:57,16,48,16.816,Thursday,‪+1 (661) 418‑9948‬,False,85,"My new order has started. Once I complete this order, I’ll have earned 150 USDT today"
+145,2026-05-21 18:54:57,2026-05-21,18:54:57,18,54,18.916,Thursday,~ Ron Perry,False,50,<attached: 00000071-PHOTO-2026-05-21-18-54-57.jpg>
+146,2026-05-21 19:00:39,2026-05-21,19:00:39,19,0,19.011,Thursday,~ Ron Perry,False,167,"I overslept, but luckily, cryptocurrency mixing transactions don’t require accepting orders at specific times. I can still earn commissions by accepting new orders now"
+147,2026-05-21 19:35:14,2026-05-21,19:35:14,19,35,19.587,Thursday,~ Tom Hess,False,50,<attached: 00000073-PHOTO-2026-05-21-19-35-14.jpg>
+148,2026-05-21 19:36:17,2026-05-21,19:36:17,19,36,19.605,Thursday,~ Tom Hess,False,116,"The 50,000 USDT I withdrew has already been credited to my account. I’m looking forward to car shopping this weekend"
+149,2026-05-21 19:49:46,2026-05-21,19:49:46,19,49,19.829,Thursday,‪+1 (810) 964‑0497‬,False,50,<attached: 00000075-PHOTO-2026-05-21-19-49-46.jpg>
+150,2026-05-21 19:51:17,2026-05-21,19:51:17,19,51,19.855,Thursday,‪+1 (810) 964‑0497‬,False,40,Let's get started on today's final trade
+151,2026-05-22 11:25:32,2026-05-22,11:25:32,11,25,11.426,Friday,~ Gatemix,False,545,"GateMix is a stable platform that has been in operation for 8 years. Sign up to receive a 30 USDT bonus. You only need to deposit 270 USDT to start trading. Each trade takes just 5 hours to complete, and you can complete 4 orders per day. The profits from each order can be reinvested into the next order to grow your income. If you’d like to join, please contact my assistant Tyler, who will guide you through the entire process. GateMix Link: gatemix.com Invitation Code: x73d GateMix App: app.gatemix.com Assistant Tyler: t.me/AssistantTyler1"
+152,2026-05-22 12:32:39,2026-05-22,12:32:39,12,32,12.544,Friday,~ Lindsay,False,50,<attached: 00000078-PHOTO-2026-05-22-12-32-39.jpg>
+153,2026-05-22 12:34:47,2026-05-22,12:34:47,12,34,12.58,Friday,~ Lindsay,False,104,"Good afternoon. My order has been completed, and I’ve earned 57.85 USDT. Now I can start my second trade"
+154,2026-05-22 12:48:52,2026-05-22,12:48:52,12,48,12.814,Friday,~ F m,False,44,I got another order.  Today's earnings: +$45
+155,2026-05-22 13:29:33,2026-05-22,13:29:33,13,29,13.492,Friday,‪+1 (661) 418‑9948‬,False,50,<attached: 00000081-PHOTO-2026-05-22-13-29-33.jpg>
+156,2026-05-22 13:32:15,2026-05-22,13:32:15,13,32,13.537,Friday,‪+1 (661) 418‑9948‬,False,35,This order will earn me another $50
+157,2026-05-22 13:43:14,2026-05-22,13:43:14,13,43,13.721,Friday,‪+1 (626) 512‑8920‬,False,79,"Hello, I registered for a Gatemix account. How do I withdraw the 30 USDT bonus?"
+158,2026-05-22 13:54:58,2026-05-22,13:54:58,13,54,13.916,Friday,~ Gatemix,False,224,"You must complete 20 orders through Channel 300 before you can withdraw the bonus amount. Only after completing 20 orders will these funds truly belong to you. Until then, the 30 USDT can only be used for mixing transactions"
+159,2026-05-22 13:58:49,2026-05-22,13:58:49,13,58,13.98,Friday,~ Gatemix,False,257,"If you haven’t started investing in GateMix yet, you can log in to the GateMix platform, deposit 270 USDT, and start taking orders to earn money. If you’re not sure how to send the funds, feel free to contact my assistant—he’ll guide you through the process"
+160,2026-05-22 14:07:32,2026-05-22,14:07:32,14,7,14.126,Friday,~ F m,False,165,"The 270 USDT investment threshold makes it accessible to many people. I didn’t think much of it at first, but it unexpectedly opened up a new source of income for me"
+161,2026-05-22 14:08:26,2026-05-22,14:08:26,14,8,14.141,Friday,~ F m,False,93,"If you want to earn commissions through coin mixing, I suggest you start investing right away"
+162,2026-05-22 14:21:58,2026-05-22,14:21:58,14,21,14.366,Friday,~ Katia,False,127,"This investment generates very stable returns, and I plan to top up my balance to 5,000 USDT next week to earn more commissions"
+163,2026-05-22 14:23:47,2026-05-22,14:23:47,14,23,14.396,Friday,~ Nestor Rui,False,85,I’ve completed quite a few coin mixing investment orders. How do I withdraw my funds?
+164,2026-05-22 14:31:31,2026-05-22,14:31:31,14,31,14.525,Friday,~ Lindsay,False,193,"It's very simple—just link your crypto wallet's receiving address, and you'll be able to withdraw funds. If you're not sure how to do this, feel free to contact Tyler; he'll walk you through it"
+165,2026-05-22 14:59:52,2026-05-22,14:59:52,14,59,14.998,Friday,~ Shaun Stephens,False,65,"I just withdrew 3,800 USDT and am waiting for the funds to arrive"
+166,2026-05-22 15:07:35,2026-05-22,15:07:35,15,7,15.126,Friday,~ Nestor Rui,False,91,How long does it take for the funds to be credited to your account after you withdraw them?
+167,2026-05-22 15:10:46,2026-05-22,15:10:46,15,10,15.179,Friday,~ Shaun Stephens,False,50,<attached: 00000093-PHOTO-2026-05-22-15-10-46.jpg>
+168,2026-05-22 15:13:11,2026-05-22,15:13:11,15,13,15.22,Friday,~ Shaun Stephens,False,176,"The funds I withdrew have been credited to my account. They usually arrive within 30 minutes, but if the platform processes the request quickly, you’ll receive them immediately"
+169,2026-05-22 16:28:18,2026-05-22,16:28:18,16,28,16.472,Friday,~ Gatemix,False,413,"If anyone in the group would like to join GateMix, please start by registering for a GateMix account. New users will receive a 30 USDT bonus. Simply deposit 270 USDT to start trading and earning returns. If you have any questions, please feel free to contact our assistant. GateMix Official Website: gatemix.com Registration Invitation Code: x73d GateMix App: app.gatemix.com Assistant Tyler: t.me/AssistantTyler1"
+170,2026-05-22 16:34:29,2026-05-22,16:34:29,16,34,16.575,Friday,~ Danny Diaz,False,50,<attached: 00000096-PHOTO-2026-05-22-16-34-29.jpg>
+171,2026-05-22 16:36:05,2026-05-22,16:36:05,16,36,16.601,Friday,~ Danny Diaz,False,127,My new order will earn me another 442 USDT. Gatemix's returns are so consistent. I can complete four orders like this every day
+172,2026-05-22 18:32:50,2026-05-22,18:32:50,18,32,18.547,Friday,‪+1 (626) 512‑8920‬,False,50,<attached: 00000098-PHOTO-2026-05-22-18-32-50.jpg>
+173,2026-05-22 18:37:40,2026-05-22,18:37:40,18,37,18.628,Friday,‪+1 (626) 512‑8920‬,False,77,"I've already deposited some BTC, and Tyler is showing me how to accept orders"
+174,2026-05-22 18:53:46,2026-05-22,18:53:46,18,53,18.896,Friday,‪+1 (626) 512‑8920‬,False,50,<attached: 00000100-PHOTO-2026-05-22-18-53-46.jpg>
+175,2026-05-22 18:55:26,2026-05-22,18:55:26,18,55,18.924,Friday,‪+1 (626) 512‑8920‬,False,114,"With Tyler's careful guidance, I've already placed an order, and in 5 hours I'll receive a commission of 1.75 USDT"
